@@ -1,0 +1,30 @@
+.services-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service-card {
+  width: 280px;
+  height: 360px;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d; /* importante para 3D */
+}
+.service-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  backface-visibility: hidden;
+}
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.service-card p {
+  font-size: 0.9rem;
+}

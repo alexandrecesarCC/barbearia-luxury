@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia Luxury</title>
+  <!-- Fonts para toque premium -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Estilos principais -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <!-- Navbar: menu centralizado com links para as principais seções. À direita,
+       um telefone de contato e o botão de agendamento em destaque. -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <nav class="nav-links centered-nav">
+        <a href="#team">Nossa Equipe</a>
+        <a href="#services">Serviços</a>
+        <a href="#testimonials">Depoimentos</a>
+        <a href="#products">Produtos</a>
+        <a href="#plans">Planos</a>
+      </nav>
+      <div class="nav-right">
+        <span class="phone">(81) 9XXXX-XXXX</span>
+        <a href="#booking" class="btn accent nav-book">Agendar</a>
+      </div>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero: usa um vídeo de fundo em preto e branco com sobreposição escura para
+       garantir contraste. O conteúdo do herói é colocado em um cartão de vidro
+       translúcido (glassmorphism), com texto e logotipo posicionados lado a lado. -->
+  <section id="home" class="hero">
+    <!-- Vídeo de fundo: utiliza o arquivo MP4 localizado em assets/videos. O vídeo está em preto e branco via CSS -->
+    <video class="hero-video" src="assets/videos/hero.mp4" autoplay muted loop playsinline></video>
+    <!-- Sobreposição escura para melhorar o contraste com o texto -->
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <!-- História fictícia da barbearia: textos em dourado e título em branco. -->
+      <div class="hero-story">
+        <h1>Barbearia Luxury</h1>
+        <p>Desde 1948, em um casarão da charmosa Avenida Europa, no coração de São Paulo, a Barbearia Luxury
+           combina a tradição britânica com a elegância paulistana. Inspirada nos clubes de navegação e golfe
+           de St. James, seu fundador transformou o espaço em um refúgio de cavalheiros, onde cortes impecáveis,
+           barbas artesanais e cuidados premium se encontram em um ambiente que evoca a sofisticação da Londres
+           clássica.</p>
+        <p>Ao longo das décadas, a barbearia se tornou um destino para artistas, empresários e bon vivant,
+           mantendo viva a arte do grooming e o espírito de um clube exclusivo. Venha fazer parte desta história
+           e descubra por que somos a referência em elegância masculina.</p>
+      </div>
+      <!-- Logotipo em destaque com tamanho responsivo. -->
+      <div class="hero-logo-wrap">
+        <img src="assets/images/logo.jpg" alt="Barbearia Luxury logo" class="hero-logo-img">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Seção: Nossa Equipe -->
+  <section id="team" class="section team">
+    <div class="container">
+      <h2 class="section-title">Nossa Equipe</h2>
+      <div class="cards team-cards">
+        <article class="card team-card" data-name="Leo Costa" data-bio="Especialista em cortes clássicos e fades perfeitos com mais de 10 anos de experiência. Participou de workshops internacionais e domina técnicas de navalha." data-photo="assets/images/leo.jpg">
+          <!-- Imagem local do barbeiro Leo para facilitar edição. -->
+          <figure class="avatar"><img src="assets/images/leo.jpg" alt="Leo Costa" loading="lazy"></figure>
+          <h3>Leo Costa</h3>
+          <p class="team-role">Fade Master</p>
+          <div class="team-info">
+            <span class="experience">10+ anos de experiência</span>
+            <div class="team-social">
+              <a href="#" aria-label="Instagram">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="16" height="16" rx="4"/><path d="M14.5 9.5a3.5 3.5 0 1 1-3.5-3.5 3.5 3.5 0 0 1 3.5 3.5z"/><circle cx="17" cy="7" r="1"/></svg>
+              </a>
+              <a href="#" aria-label="Facebook">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2h-3a5 5 0 0 0-5 5v3H7v4h2v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="card team-card" data-name="Ana Souza" data-bio="Colorista e barbeira, especialista em tratamentos capilares e spa facial. Cria experiências sensoriais únicas aliando técnica e estilo." data-photo="assets/images/ana.jpg">
+          <!-- Imagem local da barbeira Ana para facilitar edição. -->
+          <figure class="avatar"><img src="assets/images/ana.jpg" alt="Ana Souza" loading="lazy"></figure>
+          <h3>Ana Souza</h3>
+          <p class="team-role">Color Specialist</p>
+          <div class="team-info">
+            <span class="experience">7+ anos de experiência</span>
+            <div class="team-social">
+              <a href="#" aria-label="Instagram">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="16" height="16" rx="4"/><path d="M14.5 9.5a3.5 3.5 0 1 1-3.5-3.5 3.5 3.5 0 0 1 3.5 3.5z"/><circle cx="17" cy="7" r="1"/></svg>
+              </a>
+              <a href="#" aria-label="Facebook">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2h-3a5 5 0 0 0-5 5v3H7v4h2v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="card team-card" data-name="Bruno Lima" data-bio="Expert em barbas e visagismo, oferece consultoria personalizada para cada cliente. Apaixonado por tendências e cortes modernos." data-photo="assets/images/bruno.jpg">
+          <!-- Imagem local do barbeiro Bruno para facilitar edição. -->
+          <figure class="avatar"><img src="assets/images/bruno.jpg" alt="Bruno Lima" loading="lazy"></figure>
+          <h3>Bruno Lima</h3>
+          <p class="team-role">Barba & Visagismo</p>
+          <div class="team-info">
+            <span class="experience">12+ anos de experiência</span>
+            <div class="team-social">
+              <a href="#" aria-label="Instagram">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="16" height="16" rx="4"/><path d="M14.5 9.5a3.5 3.5 0 1 1-3.5-3.5 3.5 3.5 0 0 1 3.5 3.5z"/><circle cx="17" cy="7" r="1"/></svg>
+              </a>
+              <a href="#" aria-label="Facebook">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2h-3a5 5 0 0 0-5 5v3H7v4h2v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="services" class="section services">
+    <div class="container">
+      <h2 class="section-title">Nossos Serviços</h2>
+      <div class="cards service-cards">
+        <!-- Serviço 1: Cortes Clássicos. A imagem é um recorte estilizado do logotipo. -->
+        <article class="card service tilt" data-details="Perfeito para ocasiões formais e informais, o corte clássico inclui degradê, tesoura e navalha, adaptado à sua personalidade. Indicado para eventos sociais, reuniões de negócios e o dia a dia com estilo.">
+          <figure><img src="assets/images/service_hair.png" alt="Cortes Clássicos" loading="lazy"></figure>
+          <h3>Cortes Clássicos</h3>
+          <p>Degradê, tesoura, navalha e estilos tradicionais.</p>
+        </article>
+        <!-- Serviço 2: Barba Premium. Outro recorte do logotipo sugere barba e estilo. -->
+        <article class="card service tilt" data-details="Nossa Barba Premium oferece modelagem, alinhamento e hidratação profunda. Ideal para celebrações especiais, encontros importantes ou simplesmente para se presentear com um cuidado exclusivo.">
+          <figure><img src="assets/images/service_beard.png" alt="Barba Premium" loading="lazy"></figure>
+          <h3>Barba Premium</h3>
+          <p>Modelagem, alinhamento e hidratação com óleos nobres.</p>
+        </article>
+        <article class="card service tilt" data-details="O Spa Facial inclui limpeza profunda, esfoliação e máscara revitalizante. Indicado após uma semana intensa ou antes de eventos para deixar sua pele renovada e luminosa.">
+          <!-- Serviço 3: Spa Facial. Utiliza imagem local para consistência e evitar dependências externas. -->
+          <figure><img src="assets/images/vintage_hero.jpg" alt="Spa Facial" loading="lazy"></figure>
+          <h3>Spa Facial</h3>
+          <p>Limpeza profunda, esfoliação e máscara revitalizante.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section id="testimonials" class="section testimonials">
+    <div class="container">
+      <h2 class="section-title">Depoimentos</h2>
+      <div class="testimonial-cards">
+        <article class="testimonial">
+          <p>“Atendimento impecável. Me senti um verdadeiro cavalheiro em cada detalhe.”</p>
+          <h4>João S.</h4>
+        </article>
+        <article class="testimonial">
+          <p>“Equipe super talentosa, ambiente aconchegante e serviços de primeira. Recomendo!”</p>
+          <h4>Mariana R.</h4>
+        </article>
+        <article class="testimonial">
+          <p>“A melhor experiência de barbearia que já tive. Elegância e cuidado do início ao fim.”</p>
+          <h4>Carlos M.</h4>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Produtos -->
+  <section id="products" class="section products">
+    <div class="container">
+      <h2 class="section-title">Produtos</h2>
+      <div class="cards product-cards">
+        <!-- Each product card possui dados de descrição detalhada e um overlay que aparece ao pairar com o mouse. -->
+        <article class="card product" data-desc="Pomada com fixação média e acabamento natural. Perfeita para estilos clássicos e modernos, com textura leve e fragrância sofisticada.">
+          <!-- Imagem editável do produto 1 -->
+          <figure><img src="assets/images/produto1.webp" alt="Pomada Modeladora" loading="lazy"></figure>
+          <h3>Pomada Modeladora</h3>
+          <p>Fixação média e acabamento natural.</p>
+          <div class="product-overlay">
+            <p>Pomada com fixação média e acabamento natural. Perfeita para estilos clássicos e modernos, com textura leve e fragrância sofisticada.</p>
+          </div>
+        </article>
+        <article class="card product" data-desc="Óleo enriquecido com óleos essenciais e fragrâncias nobres. Hidrata, protege e dá brilho à barba mantendo-a macia e alinhada.">
+          <!-- Imagem editável do produto 2 -->
+          <figure><img src="assets/images/produto2.webp" alt="Óleo de Barba" loading="lazy"></figure>
+          <h3>Óleo de Barba</h3>
+          <p>Hidrata e dá brilho com fragrância exclusiva.</p>
+          <div class="product-overlay">
+            <p>Óleo enriquecido com óleos essenciais e fragrâncias nobres. Hidrata, protege e dá brilho à barba mantendo-a macia e alinhada.</p>
+          </div>
+        </article>
+        <article class="card product" data-desc="Kit premium com pomada, óleo e pente de madeira. Ideal para presentear ou cuidar do seu estilo diariamente com produtos de alta qualidade.">
+          <!-- Imagem editável do produto 3 -->
+          <figure><img src="assets/images/produto3.webp" alt="Kit de Cuidado" loading="lazy"></figure>
+          <h3>Kit de Cuidado</h3>
+          <p>Inclui pomada, óleo e pente de madeira premium.</p>
+          <div class="product-overlay">
+            <p>Kit premium com pomada, óleo e pente de madeira. Ideal para presentear ou cuidar do seu estilo diariamente com produtos de alta qualidade.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planos VIP -->
+  <!-- Seção: Planos VIP -->
+  <section id="plans" class="section plans">
+    <div class="container">
+      <h2 class="section-title">Planos VIP</h2>
+      <div class="cards plan-cards">
+        <article class="card plan">
+          <h3>Básico</h3>
+          <p>Corte mensal + finalização.</p>
+          <p class="price">R$ 39/mês</p>
+          <button class="btn accent">Assinar</button>
+        </article>
+        <article class="card plan">
+          <h3>Pro</h3>
+          <p>Corte quinzenal + barba + linha.</p>
+          <p class="price">R$ 69/mês</p>
+          <button class="btn accent">Assinar</button>
+        </article>
+        <article class="card plan">
+          <h3>Elite</h3>
+          <p>Ilimitado + barba + skin care.</p>
+          <p class="price">R$ 119/mês</p>
+          <button class="btn accent">Assinar</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Serviço de Agendamento -->
+  <section id="booking" class="section booking">
+    <div class="container">
+      <h2 class="section-title">Serviço de Agendamento</h2>
+      <div class="card booking-card">
+        <!-- Booking form dividido em duas colunas: opções e dados do cliente -->
+        <form class="booking-form" onsubmit="return false;">
+          <div class="booking-grid grid-two">
+            <!-- Opções de serviço e data -->
+            <div class="booking-options">
+              <h3>Escolha seu Serviço</h3>
+              <div class="field-group">
+                <label for="service-select">Serviço</label>
+                <select id="service-select" required>
+                  <option value="">Selecione</option>
+                  <option value="Corte Clássico">Corte Clássico</option>
+                  <option value="Barba Premium">Barba Premium</option>
+                  <option value="Spa Facial">Spa Facial</option>
+                  <option value="Lavagem + Finalização">Lavagem + Finalização</option>
+                </select>
+              </div>
+              <h3>Data</h3>
+              <div class="calendar-wrapper">
+                <div class="calendar-controls">
+                  <button id="prevMonth">‹</button>
+                  <span id="calendarTitle"></span>
+                  <button id="nextMonth">›</button>
+                </div>
+                <div id="calendarGrid" class="calendar-grid"></div>
+              </div>
+              <div class="field-group">
+                <label for="slotSelect">Horário</label>
+                <select id="slotSelect" required>
+                  <option value="">Selecione</option>
+                  <option>09:00</option>
+                  <option>10:00</option>
+                  <option>11:00</option>
+                  <option>14:00</option>
+                  <option>15:00</option>
+                  <option>16:00</option>
+                </select>
+              </div>
+            </div>
+            <!-- Dados do cliente -->
+            <div class="booking-details">
+              <h3>Seus Dados</h3>
+              <div class="field-group">
+                <label for="clientName">Nome</label>
+                <input id="clientName" type="text" required placeholder="Seu nome completo">
+              </div>
+              <div class="field-group">
+                <label for="clientContact">Contato</label>
+                <input id="clientContact" type="text" required placeholder="Telefone ou email">
+              </div>
+              <div class="field-group">
+                <label for="notes">Observações</label>
+                <textarea id="notes" rows="3" placeholder="Preferências ou comentários"></textarea>
+              </div>
+              <button type="submit" class="btn accent" id="confirmBooking">Confirmar Reserva</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal de Perfil -->
+  <div id="profileModal" class="modal hidden">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Fechar">×</button>
+      <figure class="modal-photo"></figure>
+      <h3 class="modal-name"></h3>
+      <p class="modal-bio"></p>
+    </div>
+  </div>
+
+  <!-- Modal de Serviço -->
+  <!-- Modal for displaying service details when a service card is clicked. -->
+  <div id="serviceModal" class="modal hidden">
+    <div class="modal-content service-modal-content">
+      <button class="close-service-modal" aria-label="Fechar">×</button>
+      <h3 class="service-modal-title"></h3>
+      <p class="service-modal-desc"></p>
+    </div>
+  </div>
+
+  <!-- Rodapé institucional com newsletter, contatos e navegação -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <!-- Newsletter: formulário de inscrição para receber novidades e obter desconto -->
+      <div class="newsletter">
+        <h3>Newsletter</h3>
+        <p>Assine e ganhe 10% de desconto no seu primeiro serviço.</p>
+        <form id="newsletterForm" onsubmit="return false;">
+          <input type="email" id="newsletterEmail" placeholder="Seu email" required>
+          <button type="submit" class="btn accent">Inscrever-se</button>
+        </form>
+      </div>
+      <!-- Linha dourada de separação entre a newsletter e o restante do rodapé -->
+      <div class="footer-separator"></div>
+      <!-- Grade do rodapé: organiza navegação, contatos/endereço e mapa em colunas -->
+      <div class="footer-grid">
+        <!-- Navegação do site -->
+        <div class="footer-nav">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#team">Equipe</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#testimonials">Depoimentos</a></li>
+            <li><a href="#products">Produtos</a></li>
+            <li><a href="#plans">Planos</a></li>
+            <li><a href="#booking">Agendamento</a></li>
+          </ul>
+        </div>
+        <!-- Contatos e endereço -->
+        <div class="footer-contact">
+          <h4>Contatos &amp; Endereço</h4>
+          <p>Endereço: Casarão, Avenida Europa, 1000 - Jardins, São Paulo/SP</p>
+          <p>Telefone: (81) 9XXXX-XXXX</p>
+          <p>Email: contato@barbearialuxury.com</p>
+          <!-- Links sociais do estabelecimento -->
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">
+              <svg width="22" height="22" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="18" height="18" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg width="22" height="22" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h2v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="WhatsApp">
+              <svg width="22" height="22" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10a9 9 0 1 1-8-8 9.3 9.3 0 0 1 8 8z"/><path d="M16.71 13.29l-3.59-3.59L11 12.41l-.29-.29a3 3 0 0 1 0-4.24l3-3a3 3 0 0 1 4.24 0l.59.59a3 3 0 0 1 0 4.24z"/></svg>
+            </a>
+          </div>
+        </div>
+        <!-- Mapa em coluna separada -->
+        <div class="footer-map">
+          <h4>Como chegar</h4>
+          <div class="map-container">
+            <iframe
+              src="https://maps.google.com/maps?q=Avenida%20Europa%201000%20-%20Jardins%20S%C3%A3o%20Paulo&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Rodapé inferior: coroa, link voltar ao topo, direitos autorais e redes sociais -->
+      <div class="footer-bottom">
+        <div class="footer-info">
+          <!-- Coroa vintage: utiliza a versão local em SVG de alta qualidade e aplica um filtro dourado via CSS -->
+          <img src="assets/images/crown.svg" alt="Coroa vintage" class="crown-icon">
+          <a href="#home" class="back-to-top">Voltar ao topo</a>
+          <p>© 2025 Barbearia Luxury. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- Chatbot widget -->
+  <div id="chatbot" class="chatbot">
+    <!-- Ícone de chat profissional usando SVG. -->
+    <button id="chatToggle" class="chat-toggle" aria-label="Abrir chat">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 11.5a8.38 8.38 0 0 1-9.37 8.37A8.5 8.5 0 0 1 5.58 19L2 21l1.75-3.58A8.38 8.38 0 0 1 2 11.5c0-4.47 3.8-8.5 8.5-8.5S21 7.03 21 11.5z"></path>
+      </svg>
+    </button>
+    <div id="chatWindow" class="chat-window hidden">
+      <div class="chat-header">
+        <h4>Atendimento</h4>
+        <button id="chatClose" class="chat-close" aria-label="Fechar chat">×</button>
+      </div>
+      <div id="chatMessages" class="chat-messages"></div>
+      <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Digite sua mensagem..." />
+        <button id="chatSend" class="chat-send" aria-label="Enviar">Enviar</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

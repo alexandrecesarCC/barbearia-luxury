@@ -1,0 +1,154 @@
+:root{
+  --bg-1:#0f172a; /* slate-900 */
+  --bg-2:#111827; /* gray-900 */
+  --brand:#f59e0b; /* amber-500 */
+  --brand-2:#fde68a; /* amber-200 */
+  --glass-bg: rgba(255,255,255,.14);
+  --glass-stroke: rgba(255,255,255,.35);
+  --text:#e5e7eb; /* gray-200 */
+  --text-strong:#0f172a; /* para painéis claros */
+  --ring:#f8fafc;
+  --ok:#22c55e; --warn:#f59e0b; --danger:#ef4444;
+}
+
+/* Reset mínimo e tipografia */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif;
+  color:var(--text); background: radial-gradient(1200px 800px at 20% -10%, #1f2937 0, transparent 60%),
+                      radial-gradient(1000px 600px at 110% 10%, #1e293b 0, transparent 65%),
+                      linear-gradient(180deg,var(--bg-1),var(--bg-2));
+}
+
+/* Abstrato animado suave (não interfere no contraste) */
+.bg-abstract{
+  position:fixed; inset:0; pointer-events:none; z-index:-1;
+  background:
+    radial-gradient(600px 300px at 70% 10%, rgba(245,158,11,.22), transparent 60%),
+    radial-gradient(500px 260px at 10% 80%, rgba(253,230,138,.18), transparent 60%);
+  filter: blur(8px);
+}
+
+/* Glass card base com texto escuro para contraste dentro do vidro */
+.glass{
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border:1px solid var(--glass-stroke);
+  border-radius:20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.35);
+  color: var(--text-strong);
+}
+
+/* NAV */
+.nav{position:sticky; top:0; z-index:50; padding:14px 16px}
+.nav__inner{display:flex; align-items:center; justify-content:space-between; padding:10px 14px}
+.brand{font-weight:800; letter-spacing:.3px; color:#111827; text-decoration:none}
+.nav__links{display:flex; gap:14px; align-items:center}
+.nav__links a{color:#111827; text-decoration:none; font-weight:600; padding:6px 10px; border-radius:10px}
+.nav__links a:hover{background: rgba(17,24,39,.07)}
+.btn-primary{background:var(--brand); color:#111827; border:0; padding:10px 14px; border-radius:12px; font-weight:800; cursor:pointer}
+.btn-primary:hover{filter:brightness(1.05)}
+.btn-secondary{border:1px solid #e5e7eb; color:#e5e7eb; padding:10px 14px; border-radius:12px; text-decoration:none}
+.nav__toggle{display:none; background:none; border:0; width:42px; height:42px; border-radius:10px}
+.nav__toggle span{display:block; height:2px; background:#111827; margin:6px 8px}
+
+/* Seções */
+.section{padding:64px 16px; max-width:1100px; margin-inline:auto}
+.section__title{font-size:clamp(24px,2.6vw,34px); font-weight:800; margin:0 0 24px}
+
+/* HERO */
+.hero{padding-top:24px}
+.hero__glass{display:grid; grid-template-columns:1.1fr .9fr; gap:22px; align-items:center; padding:24px}
+.hero__glass h1{font-size:clamp(28px,4.6vw,48px); margin:8px 0 4px}
+.hero__glass p{margin:0 0 14px; color:#374151}
+.hero__cta{display:flex; gap:12px; flex-wrap:wrap}
+.hero__img svg{width:100%; height:auto; border-radius:16px}
+
+/* Cards genéricos */
+.cards{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+.card{padding:20px}
+.card h3{margin:0 0 8px}
+.card .price{font-weight:800; margin:12px 0}
+
+/* Services com Hover 3D */
+.services{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+.service3d{perspective:1000px}
+.service3d__card{
+  transform-style:preserve-3d; transition: transform .2s ease, box-shadow .2s ease;
+  border-radius:18px; overflow:hidden; position:relative; padding:16px; background:rgba(255,255,255,.08); color:#e5e7eb; border:1px solid rgba(255,255,255,.22)
+}
+.service3d:hover .service3d__card{transform: rotateX(6deg) rotateY(-6deg) translateY(-2px); box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.service3d__image{height:160px; border-radius:12px; margin-bottom:10px; background:
+  radial-gradient(140px 80px at 30% 20%, #fde68a 0, transparent 60%),
+  radial-gradient(160px 90px at 80% 60%, #f59e0b 0, transparent 60%),
+  linear-gradient(180deg,#111827,#0f172a)}
+.service3d__image.img2{background:
+  radial-gradient(160px 90px at 70% 30%, #86efac, transparent 60%),
+  radial-gradient(160px 90px at 20% 80%, #22c55e, transparent 60%),
+  linear-gradient(180deg,#111827,#0f172a)}
+.service3d__image.img3{background:
+  radial-gradient(150px 80px at 60% 20%, #93c5fd, transparent 60%),
+  radial-gradient(160px 90px at 30% 80%, #3b82f6, transparent 60%),
+  linear-gradient(180deg,#111827,#0f172a)}
+
+/* Tabbar animada */
+.tabbar{display:flex; gap:10px; padding:8px; margin-top:18px; align-items:center}
+.tab{background:transparent; border:0; display:flex; gap:8px; align-items:center; padding:8px 12px; border-radius:12px; cursor:pointer; position:relative; color:#111827}
+.tab svg{width:22px; height:22px; stroke:#111827; fill:none; stroke-width:2}
+.tab.active{background:rgba(245,158,11,.22); outline:2px solid rgba(245,158,11,.55)}
+.tab:focus-visible{outline:3px solid var(--ring)}
+
+/* Profiles (efeito “profile page”) */
+.profiles{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+.profile{display:grid; grid-template-columns:96px 1fr; gap:14px; padding:16px; align-items:center}
+.profile__photo svg{width:96px; height:96px; border-radius:50%; background:linear-gradient(180deg,#fde68a,#f59e0b)}
+.profile__info h3{margin:4px 0 4px}
+.skills{display:flex; gap:8px; padding:0; margin:6px 0 0; list-style:none}
+.skills li{background:#111827; color:#f3f4f6; padding:4px 8px; border-radius:999px; font-size:12px}
+
+/* Produtos */
+.products{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+.product{padding:16px}
+.product__img svg{width:100%; height:auto; border-radius:10px; background:linear-gradient(180deg,#fde68a,#f59e0b,.8)}
+
+/* Calculadora */
+.calc{display:grid; gap:10px; padding:18px; max-width:520px}
+.calc .row{display:flex; align-items:center; gap:10px; color:#111827}
+.calc input[type="checkbox"]{transform: scale(1.2)}
+.calc .total{margin-top:6px; font-weight:800}
+
+/* One Field Form */
+.onefield{padding:18px; max-width:540px; margin-bottom:18px}
+.onefield__label{font-weight:600; display:block; margin-bottom:6px}
+.onefield__input{width:100%; padding:12px 14px; border-radius:12px; border:1px solid rgba(0,0,0,.2)}
+.onefield__more{display:grid; grid-template-columns:1fr auto; gap:10px; margin-top:10px}
+
+/* Calendário */
+.calendar summary{cursor:pointer; list-style:none; padding:14px; font-weight:800; color:#111827}
+.calendar[open] summary{border-bottom:1px dashed rgba(0,0,0,.2)}
+.calendar__head{display:flex; justify-content:space-between; align-items:center; padding:12px 14px}
+.caltitle{font-weight:800}
+.calendar__grid{display:grid; grid-template-columns: repeat(7,1fr); gap:8px; padding:10px}
+.calendar__grid .cell{aspect-ratio:1/1; display:flex; align-items:center; justify-content:center; border:1px solid rgba(0,0,0,.15); border-radius:10px; background:#fff; cursor:pointer}
+.calendar__grid .cell:hover{outline:2px solid var(--brand)}
+.calendar__grid .muted{opacity:.45}
+.booking__form{display:grid; gap:10px; padding:12px 14px}
+.booking__form input, .booking__form select, .booking__form textarea{
+  width:100%; padding:10px 12px; border-radius:10px; border:1px solid rgba(0,0,0,.2)
+}
+
+/* Footer */
+.footer{padding:24px 16px}
+.footer__inner{display:flex; align-items:center; justify-content:space-between; padding:14px 16px}
+.soc svg{width:22px; height:22px; fill:#111827}
+.soc:hover{transform:translateY(-2px)}
+
+/* Responsivo */
+@media (max-width: 900px){
+  .hero__glass{grid-template-columns:1fr}
+  .cards, .services, .profiles, .products{grid-template-columns:1fr}
+  .nav__links{display:none}
+  .nav__toggle{display:block}
+}

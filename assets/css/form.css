@@ -1,0 +1,54 @@
+.reservation {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+.one-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+.one-field input {
+  width: 100%;
+  padding: 12px 10px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  font-size: 1rem;
+}
+.one-field label {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  transition: 0.3s;
+  pointer-events: none;
+  color: #aaa;
+}
+.one-field input:focus + label,
+.one-field input:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 0.8rem;
+  color: #ff8c00;
+}
+.one-field .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ff8c00;
+  transition: width 0.3s;
+}
+.one-field input:focus ~ .focus-border {
+  width: 100%;
+}
+.book-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ff8c00;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+}

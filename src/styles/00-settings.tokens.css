@@ -1,0 +1,13 @@
+:root{
+  --bg-1:#0f172a; --bg-2:#111827;
+  --surface: rgba(255,255,255,.14); --stroke: rgba(255,255,255,.35);
+  --brand:#f59e0b; --brand-2:#fde68a;
+  --text:#e5e7eb; --text-strong:#0f172a; --ring:#f8fafc;
+
+  --radius-12:12px; --radius-16:16px; --radius-20:20px;
+  --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px; --space-5:24px; --space-6:32px; --space-7:48px;
+
+  --elev-1:0 4px 16px rgba(0,0,0,.2);
+  --elev-2:0 8px 32px rgba(0,0,0,.25);
+  --dur:200ms; --curve:cubic-bezier(.2,.6,.2,1);
+}

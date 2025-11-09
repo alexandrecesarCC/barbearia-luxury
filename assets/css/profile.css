@@ -1,0 +1,40 @@
+.profiles {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.profile-card {
+  position: relative;
+  width: 250px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.profile-card .img-box {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+}
+.profile-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-card .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  transform: translateY(100%);
+  transition: transform 0.5s;
+}
+.profile-card:hover .img-box {
+  transform: translateY(-40%);
+}
+.profile-card:hover .info {
+  transform: translateY(0);
+}
