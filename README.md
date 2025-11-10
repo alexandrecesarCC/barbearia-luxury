@@ -2,7 +2,7 @@
 
 :globe_with_meridians: [Visite a versão hospedada](https://alexandrecesarcc.github.io/barbearia-luxury/#home)
 
-Este projeto é um template de site one‑page para barbearia de luxo desenvolvido por Alexandre César. Ele utiliza HTML5, CSS3 (incluindo design responsivo e glassmorphism) e JavaScript puro para criar uma experiência elegante e interativa.
+Este projeto é um template de site one‑page para barbearia de alto padrão desenvolvido por Alexandre César. Ele utiliza HTML5, CSS3 (incluindo design responsivo e glassmorphism) e JavaScript puro para criar uma experiência elegante e interativa.
 
 ## **Seções**
 
