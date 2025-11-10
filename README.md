@@ -1,5 +1,9 @@
 # **Barbearia Luxury** 
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
 :globe_with_meridians: [Visite a versão hospedada](https://alexandrecesarcc.github.io/barbearia-luxury/#home)
 
 Este projeto é um template de site one‑page para barbearia de alto padrão desenvolvido por Alexandre César. Ele utiliza HTML5, CSS3 (incluindo design responsivo e glassmorphism) e JavaScript puro para criar uma experiência elegante e interativa.
@@ -65,4 +69,7 @@ Todo o conteúdo está originalmente em Português. Para adaptar o template para
 
 © 2025 **Alexandre César.** Todos os direitos reservados.
 Este projeto é de autoria exclusiva de Alexandre César e pode ser utilizado para fins educacionais ou demonstrações, desde que seja atribuída a autoria.
+
+<meta name="description" content="Template de barbearia de luxo com design premium e agendamento online">
+<meta name="author" content="Alexandre César">
 
